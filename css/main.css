@@ -103,6 +103,29 @@ button {
 
 /* Стили для хедера */
 
+.header {
+    background-color: var(--bg-black);
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+}
+
 /* Стили для основного содержания */
+
+/* Промо */
+
+.promo {
+    background-color: var(--bg-black);
+}
+
+.promo__social {
+    display: none;
+}
 
 /* Стили для футера */
