@@ -7,7 +7,7 @@
     <title>Питомник Мейн-кунов</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -31,8 +31,8 @@
                         <p class="promo__city">Новосибирск</p>
                         <h2 class="module__title promo__title">Питомник Мейн-Кунов</h2>
                         <p class="promo__slogan">Первый питомник с расширенным спектром услуг</p>
-                        <a href="#" class="promo__link">Смотреть котиков</a>
-                        <ul class="social promo__social">
+                        <a href="#" class="link promo__link">Смотреть котиков</a>
+                        <ul class="list social promo__social">
                             <li class="social__item">
                                 <a href="#" class="social__link">
                                     <span class="visually-hidden">VKontakte</span>
@@ -89,7 +89,7 @@
                     <!-- Слайдер -->
                     <!-- Табы -->
                     <!-- Слайды под выбранный таб -->
-                    <a href="#" class="pets__link">Смотреть больше</a>
+                    <a href="#" class="link pets__link">Смотреть больше</a>
                 </div>
             </div>
         </section>
@@ -97,15 +97,15 @@
         <section class="distinctions">
             <div class="container">
                 <div class="distinctions__content">
-                    <h2 class="module__title advantages__title">Особенности породы</h2>
-                    <p class="advantages__text">
+                    <h2 class="module__title distinctions__title">Особенности породы</h2>
+                    <p class="distinctions__text">
                         Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом 
                         этого питомца, вы получите умное животное, которому нет равных 
                     </p>
                     <div class="distinctions__img-wrap">
-                        <img class="distinctions__img" src="imgs/content/cat_stand.png" alt="Фото Мейн-Куна">
+                        <img class="img distinctions__img" src="imgs/content/cat_stand.png" alt="Фото Мейн-Куна">
                     </div>
-                    <ul class="distinctions__list">
+                    <ul class="list distinctions__list">
                         <li class="distinctions__item">
                             Легко уживается в семьях с детьми или другими животными
                         </li>
@@ -249,7 +249,7 @@
             <div class="container">
                 <div class="care__content">
                     <h2 class="module__title care__title">Об уходе за Мейн-Куном</h2>
-                    <ul class="care-list care__list">
+                    <ul class="list care-list care__list">
                         <li class="care-list__item advise">
                             <div class="advise__description">
                                 <h3 class="advise__title">Шерсть</h3>
@@ -338,7 +338,7 @@
                                     Мы в ответе за каждого приобретенного вами питомца
                                 </p>
                                 <div class="slide__info">
-                                    <ul class="social slide__social">
+                                    <ul class="list social slide__social">
                                         <li class="social__item">
                                             <a href="#" class="social__link">
                                                 <span class="visually-hidden">Facebook</span>
@@ -385,7 +385,7 @@
                             <!-- Второй слайд -->
                             <article class="slider__card slide slide--show">
                                 <div class="slide__img-wrap">
-                                    <img class="slide__img" src="#" alt="Фото сотрудника 1">
+                                    <img class="img slide__img" src="imgs/content/person_1.jpeg" alt="Фото сотрудника 2">
                                 </div>
                                 <h3 class="slide__title">Серёжа Попов</h3>
                                 <p class="slide__descr">Основатель питомника</p>
@@ -394,7 +394,7 @@
                                     Мы в ответе за каждого приобретенного вами питомца
                                 </p>
                                 <div class="slide__info">
-                                    <ul class="social slide__social">
+                                    <ul class="list social slide__social">
                                         <li class="social__item">
                                             <a href="#" class="social__link">
                                                 <span class="visually-hidden">Facebook</span>
@@ -440,10 +440,16 @@
                             </article>
                         </div>
                         <button class="slider__button slider__button--prev" type="button">
-                            Предыдущий
+                            <span class="visually-hidden">Предыдущий слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                            </svg>
                         </button>
                         <button class="slider__button slider__button--next" type="button">
-                            Следующий
+                            <span class="visually-hidden">Следующий слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -455,9 +461,9 @@
                 <div class="faq__content">
                     <h2 class="module__title faq__title">Вопрос-Ответ</h2>
                     <p class="faq__text">Мы ответим на самые популярные ваши вопросы</p>
-                    <ul class="faq-list faq__list">
+                    <ul class="list faq-list faq__list">
                         <li class="faq-list__item question question--opened">
-                            <a href="#" class="question__link">
+                            <a href="#" class="link question__link">
                                 <span class="question__text">
                                     С какого возраста можно забирать котенка из питомника?
                                 </span>
@@ -484,7 +490,7 @@
                             </div>
                         </li>
                         <li class="faq-list__item question">
-                            <a href="#" class="question__link">
+                            <a href="#" class="link question__link">
                                 <span class="question__text">
                                     Как зарезервировать котенка?
                                 </span>
@@ -505,7 +511,7 @@
                             </div>
                         </li>
                         <li class="faq-list__item question">
-                            <a href="#" class="question__link">
+                            <a href="#" class="link question__link">
                                 <span class="question__text">
                                     Можно ли купить кота, если я живу в другом городе?
                                 </span>
@@ -518,7 +524,7 @@
                             </a>
                         </li>
                         <li class="faq-list__item question">
-                            <a href="#" class="question__link">
+                            <a href="#" class="link question__link">
                                 <span class="question__text">
                                     Как подготовить дом к приему нового питомца? 
                                 </span>
@@ -542,7 +548,10 @@
                     <!-- Слайдер -->
                     <div class="slider reviews__slider">
                         <button class="slider__button slider__button--prev" type="button">
-                            Предыдущий
+                            <span class="visually-hidden">Предыдущий</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                            </svg>
                         </button>
                         <!-- Первый слайд -->
                         <article class="slider__review review">
@@ -557,7 +566,7 @@
                             </p>
                             <div class="review__info">
                                 <span class="review__date">24 мая 2018</span>
-                                <ul class="social review__social">
+                                <ul class="list social review__social">
                                     <li class="social__item">
                                         <a href="#" class="social__link">
                                             <span class="visually-hidden">Twitter</span>
@@ -605,7 +614,7 @@
                             </p>
                             <div class="review__info">
                                 <span class="review__date">24 мая 2019</span>
-                                <ul class="social review__social">
+                                <ul class="list social review__social">
                                     <li class="social__item">
                                         <a href="#" class="social__link">
                                             <span class="visually-hidden">Twitter</span>
@@ -641,7 +650,10 @@
                             </div>
                         </article>
                         <button class="slider__button slider__button--next" type="button">
-                            Следующий
+                            <span class="visually-hidden">Следующий</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -652,7 +664,7 @@
         <div class="container">
             <div class="footer__content">
                 <!-- Соцкнопки -->
-                <ul class="social footer__social">
+                <ul class="list social footer__social">
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <span class="visually-hidden">VKontakte</span>
