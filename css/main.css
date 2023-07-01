@@ -104,6 +104,7 @@ button {
 /* Стили для хедера */
 
 .header {
+    padding-top: 27px;
     background-color: var(--bg-black);
 }
 
