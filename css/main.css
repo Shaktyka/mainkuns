@@ -292,3 +292,33 @@ button {
 }
 
 /* Стили для футера */
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--bg-black);
+}
+
+.footer .container {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address {
+    color: #D6CCC2;
+    margin-bottom: 20px;
+}
+
+.phone {
+    margin-bottom: 25px;
+}
+
+.footer__social {
+    margin-bottom: 25px;
+}
