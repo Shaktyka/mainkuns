@@ -219,6 +219,7 @@ button {
 }
 
 .pets__link {
+    margin-top: 45px;
     font-size: 12px;
     font-weight: 700;
 }
@@ -248,8 +249,26 @@ button {
 
 /* Особенности породы */
 
+.distinctions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.distinctions__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.distinctions__title {
+    max-width: 80%;
+    margin-bottom: 35px;
+}
+
 .distinctions__text {
     margin: 0;
+    margin-bottom: 30px;
+    max-width: 271px;
     font-weight: 300;
     color: var(--text-orange);
     text-align: center;
@@ -257,10 +276,61 @@ button {
 
 .distinctions__img-wrap {
     display: flex;
+    position: relative;
+    margin-bottom: 53px;
+}
+
+.distinctions__img {
+    position: relative;
+    z-index: 3;
+}
+
+.distinctions__img-wrap::before {
+    position: absolute;
+    content: "";
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 230px;
+    background-color: #151313;
+    border-radius: 50%;
+}
+
+.distinctions__img-wrap::after {
+    position: absolute;
+    content: "";
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 280px;
+    border: 0.5px solid var(--text-orange); 
+    border-radius: 50%;
 }
 
 .distinctions__list {
     font-weight: 300;
+}
+
+.distinctions__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.distinctions__item {
+    position: relative;
+    padding-left: 18px;
+}
+
+.distinctions__item::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-orange);
+    border-radius: 50%;
 }
 
 /* Об уходе */
