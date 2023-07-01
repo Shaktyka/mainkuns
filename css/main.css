@@ -15,7 +15,7 @@ body {
     padding: 0;
     min-width: 360px;
     min-height: 100vh;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 14px;
     line-height: 140%;
     font-weight: 400;
@@ -196,8 +196,23 @@ button {
 
 /* Питомцы */
 
+.pets {
+    padding-top: 60px;
+}
+
+.pets__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pets__title {
+    margin-bottom: 35px;
+}
+
 .pets__text {
     margin: 0;
+    margin-bottom: 40px;
     font-weight: 300;
     color: var(--text-orange);
     text-align: center;
@@ -206,6 +221,29 @@ button {
 .pets__link {
     font-size: 12px;
     font-weight: 700;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 235px;
+    margin-bottom: 40px;
+}
+
+.tabs__item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.tabs__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.tabs__item--active .tabs__link {
+    color: var(--text-white);
 }
 
 /* Особенности породы */
