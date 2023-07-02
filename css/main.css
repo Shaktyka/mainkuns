@@ -408,9 +408,14 @@ button {
     background: url("../imgs/content/cat_bg_desk.jpeg") no-repeat 50% 50% / cover;
 }
 
+.care__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .care__title {
     max-width: 228px;
-    margin: 0 auto;
     margin-bottom: 40px;
 }
 
@@ -456,8 +461,25 @@ button {
 
 /* Наша команда */
 
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__title {
+    margin-bottom: 35px;
+}
+
 .team__text {
+    max-width: 252px;
     margin: 0;
+    margin-bottom: 40px;
     font-weight: 300;
     color: var(--text-orange);
     text-align: center;
