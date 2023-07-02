@@ -101,44 +101,51 @@
                     </ul>
                     <!-- Слайды под выбранный таб -->
                     <div class="slider team__slider">
-                        <!-- Первый слайд -->
-                        <div class="slider__slides">
-                            <article class="slider__card slide slide--show">
-                                <div class="slide__img-wrap">
-                                    <img class="img slide__img" src="imgs/content/pet_1.jpeg" alt="Фото котика 1">
-                                </div>    
-                            </article>
-                            <!-- Второй слайд -->
-                            <article class="slider__card slide">
-                                <div class="slide__img-wrap">
-                                    <img class="img slide__img" src="imgs/content/pet_2.jpeg" alt="Фото котика 2">
-                                </div>    
-                            </article>
-                            <!-- Второй слайд -->
-                            <article class="slider__card slide">
-                                <div class="slide__img-wrap">
-                                    <img class="img slide__img" src="imgs/content/pet_3.jpeg" alt="Фото котика 3">
-                                </div>    
-                            </article>
+                        <div class="slider__images">
+                            <!-- Список слайдов -->
+                            <div class="slider__slides">
+                                <article class="slider__card slide slide--show">
+                                    <h3 class="visually-hidden">Фото питомца 1</h3>
+                                    <div class="slide__img-wrap">
+                                        <img class="img slide__img" src="imgs/content/pet_1.jpeg" alt="Фото котика 1">
+                                    </div>    
+                                </article>
+                                <!-- Второй слайд -->
+                                <article class="slider__card slide">
+                                    <h3 class="visually-hidden">Фото питомца 2</h3>
+                                    <div class="slide__img-wrap">
+                                        <img class="img slide__img" src="imgs/content/pet_2.jpeg" alt="Фото котика 2">
+                                    </div>    
+                                </article>
+                                <!-- Второй слайд -->
+                                <article class="slider__card slide">
+                                    <h3 class="visually-hidden">Фото питомца 3</h3>
+                                    <div class="slide__img-wrap">
+                                        <img class="img slide__img" src="imgs/content/pet_3.jpeg" alt="Фото котика 3">
+                                    </div>    
+                                </article>
+                            </div>
+                            <!-- Кнопки пролистывания слайдов -->
+                            <button class="slider__button slider__button--prev" type="button">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                    <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                                </svg>
+                            </button>
+                            <button class="slider__button slider__button--next" type="button">
+                                <span class="visually-hidden">Следующий слайд</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                    <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
+                                </svg>
+                            </button>
                         </div>
-                        <button class="slider__button slider__button--prev" type="button">
-                            <span class="visually-hidden">Предыдущий слайд</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
-                                <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
-                            </svg>
-                        </button>
-                        <button class="slider__button slider__button--next" type="button">
-                            <span class="visually-hidden">Следующий слайд</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
-                                <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
-                            </svg>
-                        </button>
                     </div>
                     <!-- Кнопка -->
                     <a href="#" class="link button button--action pets__link">Смотреть больше</a>
                 </div>
             </div>
         </section>
+        
         <!-- Особенности породы -->
         <section class="distinctions">
             <div class="container">
@@ -168,6 +175,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Почему мы -->
         <section class="modele advantages">
             <div class="container">
@@ -290,6 +298,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Об уходе -->
         <section class="modele care">
             <div class="container">
@@ -360,6 +369,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Наша команда -->
         <section class="module team">
             <div class="container">
@@ -371,6 +381,7 @@
                     </p>
                     <!-- Слайдер -->
                     <div class="slider team__slider">
+                        <div class="slider__images">
                         <!-- Первый слайд -->
                         <div class="slider__slides">
                             <article class="slider__card slide slide--show">
@@ -485,6 +496,7 @@
                                 </div>
                             </article>
                         </div>
+                        </div>
                         <button class="slider__button slider__button--prev" type="button">
                             <span class="visually-hidden">Предыдущий слайд</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
@@ -501,6 +513,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Вопрос-ответ -->
         <section class="module faq">
             <div class="container">
@@ -586,6 +599,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Отзывы -->
         <section class="module reviews">
             <div class="container">
@@ -593,6 +607,7 @@
                     <h2 class="module__title reviews__title">Отзывы</h2>
                     <!-- Слайдер -->
                     <div class="slider reviews__slider">
+                        <div class="slider__images">
                         <!-- Первый слайд -->
                         <div class="slider__slides">
                             <article class="slider__card slide slide--show">
@@ -691,6 +706,7 @@
                                 </div>
                             </article>
                         </div>
+                        </div>
                         <button class="slider__button slider__button--prev" type="button">
                             <span class="visually-hidden">Предыдущий слайд</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
@@ -707,7 +723,9 @@
                 </div>
             </div>
         </section>
+
     </main>
+    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">

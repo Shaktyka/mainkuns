@@ -13,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 360px;
+    min-width: 320px;
     min-height: 100vh;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 14px;
@@ -84,20 +84,20 @@ button {
 /* Сеточные стили. Примеры медиа-запросов для вёрстки mobile-first */
 
 .container {
-    min-width: 360px;
+    min-width: 320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 @media (min-width: 768px) {
     .container {
-        padding: 0 40px;
+        /* padding: 0 40px; */
     }
 }
 
 @media (min-width: 1920px) {
     .container {
-        padding: 0 60px;
+        /* padding: 0 60px; */
     }
 }
 
@@ -113,26 +113,6 @@ button {
 .button--action {
     padding: 15px 18px 16px;
     border: 0.5px solid var(--text-orange);
-}
-
-/* Иконки соцсетей */
-
-.social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.social__item:not(:last-child) {
-    margin-right: 20px;
-}
-
-.social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
 }
 
 /* Стили для хедера */
@@ -160,9 +140,83 @@ button {
     padding: 0;
     font-family: "Yeseva One", "Times New Roman", serif;
     font-size: 28px;
-    line-height: 100%;
+    line-height: 120%;
     font-weight: 400;
     text-align: center;
+}
+
+/* Иконки соцсетей */
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+/* Стили слайдера */
+
+.slider__images {
+    position: relative;
+}
+
+.slider__slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 234px;
+    height: 248px;
+}
+
+.slide__img-wrap {
+    width: 234px;
+    height: 248px;
+}
+
+.slide__img {
+    object-fit: cover;
+}
+
+.slide--show {
+    display: block;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+    
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slider__button--prev {
+    left: -15%;
+}
+
+.slider__button--next {
+    left: 105%;
 }
 
 /* Промо */
@@ -231,6 +285,7 @@ button {
 }
 
 .pets__text {
+    max-width: 85%;
     margin: 0;
     margin-bottom: 40px;
     font-weight: 300;
@@ -330,6 +385,7 @@ button {
 }
 
 .distinctions__list {
+    padding-right: 18px;
     font-weight: 300;
 }
 
@@ -368,7 +424,7 @@ button {
 }
 
 .advantages__title {
-    max-width: 71%;
+    max-width: 65%;
     margin: 0;
     margin-bottom: 35px;
     font-weight: 300;
@@ -376,7 +432,7 @@ button {
 }
 
 .advantages__text {
-    max-width: 94%;
+    max-width: 85%;
     margin: 0;
     margin-bottom: 40px;
     font-weight: 300;
