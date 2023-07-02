@@ -86,59 +86,53 @@
                     <p class="pets__text">
                         Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
                     </p>
-                    <!-- Слайдер -->
                     <!-- Табы -->
                     <ul class="list tabs pets__tabs">
                         <li class="tabs__item tabs__item--active">
-                            <a href="#" class="link tabs__link">Коты</a>
+                            <a href="#" class="link tabs__link" id="tab-1">Коты</a>
                         </li>
                         <li class="tabs__item">
-                            <a href="#" class="link tabs__link">Кошки</a>
+                            <a href="#" class="link tabs__link" id="tab-1">Кошки</a>
                         </li>
                         <li class="tabs__item">
-                            <a href="#" class="link tabs__link">Котята</a>
+                            <a href="#" class="link tabs__link" id="tab-1">Котята</a>
                         </li>
                     </ul>
-                    <!-- Слайды под выбранный таб -->
-                    <div class="slider team__slider">
-                        <div class="slider__images">
-                            <!-- Список слайдов -->
-                            <div class="slider__slides">
-                                <article class="slider__card slide slide--show">
-                                    <h3 class="visually-hidden">Фото питомца 1</h3>
-                                    <div class="slide__img-wrap">
-                                        <img class="img slide__img" src="imgs/content/pet_1.jpeg" alt="Фото котика 1">
-                                    </div>    
+                    <!-- Карточки типа стопки Тиндер -->
+                    <div class="cards">
+                        <ul class="list cards__list">
+                            <li class="card__item">
+                                <article class="card">
+                                    <h3 class="visually-hidden">Фото котика 1</h3>
+                                    <img class="card__photo" src="/imgs/content/pet_1.jpeg" alt="Котик 1">
                                 </article>
-                                <!-- Второй слайд -->
-                                <article class="slider__card slide">
-                                    <h3 class="visually-hidden">Фото питомца 2</h3>
-                                    <div class="slide__img-wrap">
-                                        <img class="img slide__img" src="imgs/content/pet_2.jpeg" alt="Фото котика 2">
-                                    </div>    
+                            </li>
+                            <li class="card__item">
+                                <article class="card">
+                                    <h3 class="visually-hidden">Фото котика 2</h3>
+                                    <img class="card__photo" src="/imgs/content/pet_2.jpeg" alt="Котик 2">
                                 </article>
-                                <!-- Второй слайд -->
-                                <article class="slider__card slide">
-                                    <h3 class="visually-hidden">Фото питомца 3</h3>
-                                    <div class="slide__img-wrap">
-                                        <img class="img slide__img" src="imgs/content/pet_3.jpeg" alt="Фото котика 3">
-                                    </div>    
+                            </li>
+                            <li class="card__item">
+                                <article class="card">
+                                    <h3 class="visually-hidden">Фото котика 3</h3>
+                                    <img class="card__photo" src="/imgs/content/pet_3.jpeg" alt="Котик 3">
                                 </article>
-                            </div>
-                            <!-- Кнопки пролистывания слайдов -->
-                            <button class="slider__button slider__button--prev" type="button">
-                                <span class="visually-hidden">Предыдущий слайд</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
-                                    <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
-                                </svg>
-                            </button>
-                            <button class="slider__button slider__button--next" type="button">
-                                <span class="visually-hidden">Следующий слайд</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
-                                    <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
-                                </svg>
-                            </button>
-                        </div>
+                            </li>
+                        </ul>
+                        <!-- Кнопки пролистывания слайдов -->
+                        <button class="cards__button cards__button--prev" type="button">
+                            <span class="visually-hidden">Предыдущий слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                            </svg>
+                        </button>
+                        <button class="cards__button cards__button--next" type="button">
+                            <span class="visually-hidden">Следующий слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                                <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
+                            </svg>
+                        </button>
                     </div>
                     <!-- Кнопка -->
                     <a href="#" class="link button button--action pets__link">Смотреть больше</a>
