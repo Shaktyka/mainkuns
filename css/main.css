@@ -383,6 +383,8 @@ button {
 }
 
 .advantage__title {
+    margin: 0;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: 300;
     color: var(--text-white);
@@ -400,8 +402,35 @@ button {
 
 /* Об уходе за Мейн-Куном */
 
+.care {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../imgs/content/cat_bg_desk.jpeg") no-repeat 50% 50% / cover;
+}
+
+.care__title {
+    max-width: 228px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.advise {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid var(--text-orange);
+}
+
+.advise:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.advise__description {
+    padding: 25px 8px 25px 25px;
+}
+
 .advise__title {
     margin: 0;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
     color: var(--text-orange);
@@ -409,6 +438,20 @@ button {
 
 .advise__text {
     margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.advise__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 46px;
+    background-color: var(--text-orange);
+}
+
+.advise__link path {
+    stroke: var(--text-white);
 }
 
 /* Наша команда */
