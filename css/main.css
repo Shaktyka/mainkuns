@@ -115,6 +115,26 @@ button {
     border: 0.5px solid var(--text-orange);
 }
 
+/* Иконки соцсетей */
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
 /* Стили для хедера */
 
 .header {
