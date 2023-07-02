@@ -333,19 +333,69 @@ button {
     border-radius: 50%;
 }
 
-/* Об уходе */
+/* Почему мы */
+
+.advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--bg-black);
+}
+
+.advantages__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__title {
+    max-width: 71%;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 300;
+    text-align: center;
+}
 
 .advantages__text {
+    max-width: 94%;
     margin: 0;
+    margin-bottom: 40px;
     font-weight: 300;
     color: var(--text-orange);
     text-align: center;
 }
 
+.advantage {
+    width: 290px;
+    background-color: var(--bg-gray);
+    padding: 15px;
+}
+
+.advantage:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.advantage__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 218px;
+    padding: 25px;
+}
+
 .advantage__title {
-    margin: 0;
+    font-size: 14px;
     font-weight: 300;
+    color: var(--text-white);
     text-align: center;
+}
+
+.advantage--accented .advantage__content {
+    background-color: var(--text-orange);
+}
+
+.advantage--accented path {
+    fill: var(--text-white);
+    stroke: var(--text-orange);
 }
 
 /* Об уходе за Мейн-Куном */
