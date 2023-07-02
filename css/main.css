@@ -116,11 +116,23 @@ button {
     border: 0.5px solid var(--text-orange);
 }
 
+@media (min-width: 768px) { 
+    .button--action {
+        padding: 18px 35px 17px;
+    }
+}
+
 /* Стили для хедера */
 
 .header {
     padding-top: 27px;
     background-color: var(--bg-black);
+}
+
+@media (min-width: 768px) { 
+    .header {
+        padding-top: 30px;
+    }
 }
 
 .header__content {
@@ -240,10 +252,24 @@ button {
     background-position: 100% bottom;
 }
 
+@media (min-width: 768px) { 
+    .promo {
+        padding-top: 94px;
+        padding-bottom: 46px;
+        background-image: url("../imgs/content/cat_tablet.png");
+    }
+}
+
 .promo__info {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .promo__info {
+        align-items: flex-start;
+    }
 }
 
 .promo__subtitle {
@@ -254,10 +280,26 @@ button {
     text-align: center;
 }
 
+@media (min-width: 768px) { 
+    .promo__subtitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+}
+
 .promo__title {
     margin-bottom: 30px;
     font-size: 36px;
     font-weight: 400;
+}
+
+@media (min-width: 768px) { 
+    .promo__title {
+        max-width: 469px;
+        margin-bottom: 25px;
+        font-size: 52px;
+        text-align: left;
+    }
 }
 
 .promo__slogan {
@@ -268,14 +310,47 @@ button {
     text-align: center;
 }
 
+@media (min-width: 768px) { 
+    .promo__slogan {
+        text-align: left;
+        margin-bottom: 57px;
+    }
+}
+
 .promo__link {
     font: inherit;
     font-size: 12px;
     font-weight: 700;
 }
 
+@media (min-width: 768px) { 
+    .promo__link {
+        min-width: 200px;
+    }
+}
+
 .promo__social {
     display: none;
+}
+
+@media (min-width: 768px) { 
+    .promo__social {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .promo__social .social__item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    .promo__social .social__link {
+        width: 15px;
+        height: 15px;
+    }
+
+    .promo__social .social__link path {
+        fill: var(--text-white);
+    }
 }
 
 /* Питомцы */
