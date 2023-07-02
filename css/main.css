@@ -24,6 +24,12 @@ body {
     background-color: var(--bg-gray);
 }
 
+@media (min-width: 768px) { 
+    .body {
+        font-size: 16px;
+    }
+}
+
 /* Чтобы в элементах форм использовался тот же шрифт, что и у основного текста */
 input,
 textarea,
@@ -359,6 +365,12 @@ button {
     padding-top: 60px;
 }
 
+@media (min-width: 768px) { 
+    .pets {
+        padding-top: 100px;
+    }
+}
+
 .pets__content {
     display: flex;
     flex-direction: column;
@@ -367,6 +379,12 @@ button {
 
 .pets__title {
     margin-bottom: 35px;
+}
+
+@media (min-width: 768px) { 
+    .pets__title {
+        margin-bottom: 23px;
+    }
 }
 
 .pets__text {
@@ -395,6 +413,12 @@ button {
     max-width: 235px;
 }
 
+@media (min-width: 768px) { 
+    .tabs {
+        max-width: 272px;
+    }
+}
+
 .tabs__item:not(:last-child) {
     margin-right: 45px;
 }
@@ -403,6 +427,12 @@ button {
     font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) { 
+    .tabs__link {
+        font-size: 18px;
+    }
 }
 
 .tabs__item--active .tabs__link {
