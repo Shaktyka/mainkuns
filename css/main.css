@@ -268,7 +268,7 @@ button {
 .distinctions__text {
     margin: 0;
     margin-bottom: 30px;
-    max-width: 271px;
+    max-width: 85%;
     font-weight: 300;
     color: var(--text-orange);
     text-align: center;
@@ -430,6 +430,7 @@ button {
 }
 
 .advise__description {
+    flex-grow: 1;
     padding: 25px 8px 25px 25px;
 }
 
@@ -477,7 +478,7 @@ button {
 }
 
 .team__text {
-    max-width: 252px;
+    max-width: 85%;
     margin: 0;
     margin-bottom: 40px;
     font-weight: 300;
@@ -525,7 +526,7 @@ button {
 }
 
 .faq__text {
-    max-width: 177px;
+    max-width: 85%;
     margin: 0;
     margin-bottom: 40px;
     font-weight: 300;
