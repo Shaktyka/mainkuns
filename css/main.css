@@ -860,6 +860,13 @@ button {
     background: url("../imgs/content/cat_bg_desk.jpeg") no-repeat 50% 50% / cover;
 }
 
+@media (min-width: 768px) { 
+    .care {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+}
+
 .care__content {
     display: flex;
     flex-direction: column;
@@ -869,6 +876,19 @@ button {
 .care__title {
     max-width: 228px;
     margin-bottom: 40px;
+}
+
+@media (min-width: 768px) { 
+    .care__title {
+        max-width: 90%;
+        margin-bottom: 37px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .care__list {
+        max-width: 560px;
+    }
 }
 
 .advise {
@@ -881,9 +901,21 @@ button {
     margin-bottom: 30px;
 }
 
+@media (min-width: 768px) { 
+    .advise:not(:last-child) {
+        margin-bottom: 23px;
+    }
+}
+
 .advise__description {
     flex-grow: 1;
     padding: 25px 8px 25px 25px;
+}
+
+@media (min-width: 768px) { 
+    .advise__description {
+        padding: 39px 28px 43px 49px;
+    }
 }
 
 .advise__title {
@@ -892,6 +924,12 @@ button {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-orange);
+}
+
+@media (min-width: 768px) { 
+    .advise__title {
+        font-size: 22px;
+    }
 }
 
 .advise__text {
@@ -906,6 +944,12 @@ button {
     align-items: center;
     min-width: 46px;
     background-color: var(--text-orange);
+}
+
+@media (min-width: 768px) { 
+    .advise__link {
+        min-width: 60px;
+    }
 }
 
 .advise__link path {
