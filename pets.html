@@ -9,43 +9,91 @@
 </head>
 <body>
     <main>
-        <section class="module pets">
+        <section class="module team">
             <div class="container">
-                <div class="pets__content">
-                    <h2 class="module__title pets__title">Питомцы</h2>
-                    <p class="pets__text">
-                        Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
+                <div class="team__content">
+                    <h2 class="module__title team__title">Наша команда</h2>
+                    <p class="team__text">
+                        Все сотрудники нашего питомника  дипломированые специалисты
+                        в области фелинологии и ветеринарии
                     </p>
-                    <!-- Карточки типа стопки Тиндер -->
-                    <div class="cards">
-                        <ul class="list cards__list">
-                            <li class="card__item">
-                                <article class="card">
-                                    <h3 class="visually-hidden">Фото котика 1</h3>
-                                    <img class="card__photo" src="/imgs/content/pet_1.jpeg" alt="Котик 1">
+                    <!-- Слайдер -->
+                    <div class="slider team__slider">
+                        <ul class="list slider__list">
+                            <li class="slider__item slide slide--active">
+                                <article class="slide__card">
+                                    <div class="slide__img-wrap">
+                                        <img class="img slide__img" src="imgs/content/person_1.jpeg" alt="Сотрудник Серёжа Попов">
+                                    </div>
+                                    <h3 class="slide__title">Серёжа Попов</h3>
+                                    <p class="slide__descr">Основатель питомника</p>
+                                    <p class="slide__text">
+                                        Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. 
+                                        Мы в ответе за каждого приобретенного вами питомца
+                                    </p>
+                                    <ul class="list social slide__social">
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">Facebook</span>
+                                                <img class="social__pic" src="imgs/pics/fb_pic.svg" alt="Иконка Facebook">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">Twitter</span>
+                                                <img class="social__pic" src="imgs/pics/tw_pic.svg" alt="Иконка Twitter">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">VKontakte</span>
+                                                <img class="social__pic" src="imgs/pics/vk_pic.svg" alt="Иконка VKontakte">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </article>
                             </li>
-                            <li class="card__item">
-                                <article class="card">
-                                    <h3 class="visually-hidden">Фото котика 2</h3>
-                                    <img class="card__photo" src="/imgs/content/pet_2.jpeg" alt="Котик 2">
-                                </article>
-                            </li>
-                            <li class="card__item">
-                                <article class="card">
-                                    <h3 class="visually-hidden">Фото котика 3</h3>
-                                    <img class="card__photo" src="/imgs/content/pet_3.jpeg" alt="Котик 3">
+                            <li class="slider__item slidee">
+                                <article class="slide__card">
+                                    <div class="slide__img-wrap">
+                                        <img class="img slide__img" src="imgs/content/person_1.jpeg" alt="Сотрудник Серёжа Попов">
+                                    </div>
+                                    <h3 class="slide__title">Серёжа Попов 1</h3>
+                                    <p class="slide__descr">Основатель питомника</p>
+                                    <p class="slide__text">
+                                        Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. 
+                                        Мы в ответе за каждого приобретенного вами питомца
+                                    </p>
+                                    <ul class="list social slide__social">
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">Facebook</span>
+                                                <img class="social__pic" src="imgs/pics/fb_pic.svg" alt="Иконка Facebook">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">Twitter</span>
+                                                <img class="social__pic" src="imgs/pics/tw_pic.svg" alt="Иконка Twitter">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <span class="visually-hidden">VKontakte</span>
+                                                <img class="social__pic" src="imgs/pics/vk_pic.svg" alt="Иконка VKontakte">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </article>
                             </li>
                         </ul>
-                        <!-- Кнопки пролистывания слайдов -->
-                        <button class="cards__button cards__button--prev" type="button">
+                        <button class="slider__button slider__button--prev" type="button">
                             <span class="visually-hidden">Предыдущий слайд</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
                                 <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
                             </svg>
                         </button>
-                        <button class="cards__button cards__button--next" type="button">
+                        <button class="slider__button slider__button--next" type="button">
                             <span class="visually-hidden">Следующий слайд</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
                                 <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
@@ -58,6 +106,52 @@
     </main>
 </body>
 </html>
+
+<!-- Pets -->
+<!-- <section class="module pets">
+    <div class="container">
+        <div class="pets__content">
+            <h2 class="module__title pets__title">Питомцы</h2>
+            <p class="pets__text">
+                Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
+            </p>
+            <div class="cards">
+                <ul class="list cards__list">
+                    <li class="card__item">
+                        <article class="card">
+                            <h3 class="visually-hidden">Фото котика 1</h3>
+                            <img class="card__photo" src="/imgs/content/pet_1.jpeg" alt="Котик 1">
+                        </article>
+                    </li>
+                    <li class="card__item">
+                        <article class="card">
+                            <h3 class="visually-hidden">Фото котика 2</h3>
+                            <img class="card__photo" src="/imgs/content/pet_2.jpeg" alt="Котик 2">
+                        </article>
+                    </li>
+                    <li class="card__item">
+                        <article class="card">
+                            <h3 class="visually-hidden">Фото котика 3</h3>
+                            <img class="card__photo" src="/imgs/content/pet_3.jpeg" alt="Котик 3">
+                        </article>
+                    </li>
+                </ul>
+                <button class="cards__button cards__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                        <path stroke="#A07B50" d="m9 1-8 9.333L9 19"/>
+                    </svg>
+                </button>
+                <button class="cards__button cards__button--next" type="button">
+                    <span class="visually-hidden">Следующий слайд</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="none">
+                        <path stroke="#A07B50" d="m1 1 8 9.333L1 19"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <!-- 
     <div class="slider team__slider">

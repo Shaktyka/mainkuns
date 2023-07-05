@@ -1011,6 +1011,12 @@ button {
     background-color: var(--bg-gray);
 }
 
+@media (min-width: 768px) { 
+    .faq {
+        padding-top: 137px;
+    }
+}
+
 .faq__content {
     display: flex;
     flex-direction: column;
